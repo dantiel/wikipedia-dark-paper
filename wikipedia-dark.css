@@ -590,6 +590,8 @@
       position: absolute;
       left: -1em;
       font-family: Coelacanth, Baskerville, Athelas, Palatino, serif; }
+  #content .hlist li:before, #content .catlinks li:before {
+    content: "" !important; }
   #content table.wikitable {
     color: #505050 !important;
     border: 1px solid #EEE !important; }
@@ -634,8 +636,8 @@
     background: rgba(255, 247, 245, 0.125) !important;
     border: 6px double rgba(255, 255, 255, 0.125) !important; }
 
-  /* language selection */
   table.vertical-navbox, .BoxenVerschmelzen {
+    background: none !important;
     border-radius: 7px !important;
     border: 6px double rgba(255, 255, 255, 0.15) !important;
     padding: 0;
@@ -647,6 +649,7 @@
     table.vertical-navbox div.NavFrame div.NavContent, .BoxenVerschmelzen div.NavFrame div.NavContent {
       padding-bottom: 1em; }
 
+  /* language selection */
   #p-lang {
     position: fixed;
     bottom: 0;
@@ -877,6 +880,9 @@
     background-color: #000000 !important;
     border-radius: 1rem;
     box-shadow: 0 0 0px 1px rgba(255, 255, 255, 0.22); }
+
+  #mw-navigation {
+    color: white !important; }
 
   #toc a {
     border: none !important;
