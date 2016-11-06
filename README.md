@@ -1,4 +1,4 @@
-# WIKIPEDIA DARK PAPER — RESPONSIVE SIDEBAR
+# Wikipedia Dark Paper + Responsive Sidebar
 
 ## Description
 
@@ -22,5 +22,3 @@ name says it all. a dark minimalistic style for wikipedias with. stay tuned for 
 
 based on wikipedia paper by caspid:
 https://userstyles.org/styles/99183/wikipedia-paper-sidebar-edition
-
-if you want to contribute, contact me in order to obtain SASS sources
