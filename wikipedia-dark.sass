@@ -1,0 +1,13 @@
+@-moz-document domain(wikipedia.org), domain(wikibooks.org)
+  @import 'main'
+
+
+@-moz-document url-prefix(http://en.wikipedia.org/wiki/File:)
+  /* hide image properties box on image page
+  ul#filetoc, h1#firstHeading.firstHeading
+    display: none !important
+  div
+    &.sharedUploadNotice
+      display: none !important
+    &#file.fullImageLink
+      text-align: center !important

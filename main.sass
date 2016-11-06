@@ -1,0 +1,698 @@
+
+$gray2:      #050505
+$gray3:      #2f2f2f
+$gray4:      #505050
+$gray5:      #626262
+$gray6:      #888
+$gray7:      #AAA
+$gray8:      #CCC
+$gray9:      #EEE
+
+$inactive-paragraph:  $gray5
+$inactive-list:       $gray4
+$first-heading:       rgba(255, 255, 255, 0.85)
+
+$link-link:       #41729b
+$link-hover:      #36c
+$link-active:     #40BCFF
+$link-visited:    $gray6
+$link-new:        #ff319f
+$toc-link-active: #00A6FF
+
+$active-link-link:       #00A6FF
+$active-link-hover:      #ffc705
+$active-link-active:     #ffff00
+$active-link-visited:    #a8b1e4
+$active-link-new:        #e979d0
+
+@import coelacanth
+$text-font:              Coelacanth, Baskerville, Athelas, Palatino, serif
+$headline-font:          CoelacanthHeavyCaption, Baskerville, Athelas, Palatino, serif
+$toc-font:               CoelacanthCaption, Baskerville, Athelas, Palatino, serif
+$first-headline-font:    CoelacanthDisplay, Baskerville, Athelas, Palatino, serif
+$headline-cursive-font:  CoelacanthItalic, Baskerville, Athelas, Palatino, serif
+$bold-font:              CoelacanthHeavy14op, Baskerville, Athelas, Palatino, serif
+
+$sidebar-width: 14.28rem
+
+
+
+/* hide tagline
+#siteSub
+  display:  none
+#mw-navigation
+  //display: none
+/* hide header */
+/* hide header except search */
+#mw-head
+  position: static !important
+#mw-head > div:not(#right-navigation), #right-navigation > div:not(#p-search)
+  display:  none
+
+html
+  font-size: 120%
+body
+  font-size: inherit
+  /*    background:           url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/zwartevilt.png)
+  background: black url(http://imgur.com/BvtDPpE.png)
+  -webkit-hyphens: auto
+  -moz-hyphens: auto
+  hyphens: auto
+  text-align: justify
+  -webkit-font-smoothing: antialiased
+#bodyContent
+  font: 1rem/1.5 $text-font
+h1, h2, h3, h4, h5, h6, p, pre, blockquote
+  -webkit-margin-collapse: collapse !important
+  -moz-margin-collapse: collapse !important
+  margin-top: 0.75em !important
+  margin-bottom: 0.75em !important
+h1, h2, h3, h4, h5, h6
+  color: white !important
+  font-family: $headline-font !important
+  font-style: normal !important
+  font-weight: 900 !important
+  line-height: 1.4em !important
+  text-align: center !important
+h1, h5, h6
+  text-transform: uppercase !important
+h1
+  font-size: 3em !important
+h2
+  font-size: 1.35em !important
+h3
+  font-size: 1em !important
+h4
+  font-size: 1em !important
+  font-style: italic !important
+  font-family: $headline-cursive-font !important
+h5
+  font-size: 0.83em !important
+h6
+  font-size: 0.83em !important
+  float: left !important
+  line-height: 1.35em/0.83 !important
+  margin: 0.2em 1ex -0.2em 0 !important
+  margin: 0.9em 1ex -0.2em 0 !important
+  padding: 0 !important
+p
+  margin-bottom: 0 !important
+  + p
+    margin-top: 0 !important
+    text-indent: 2em !important
+body
+  b, strong
+    font-family: $bold-font
+  /*    font-weight:          600 !important
+p
+  margin: 0 0 1em 0
+  line-height: inherit
+  color: $inactive-paragraph !important
+.MathJax
+  color: $gray7
+/* prevents sub/superscripts from throwing off line spacing
+sub
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+sup
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+  top: -0.33em
+sub
+  bottom: -0.33em
+/* title
+.firstHeading
+  /*font:                     48px/1 AquilineTwo, IM Fell Great Primer Pro, Georgia, Open Sans !important
+  font-family: $first-headline-font !important
+  color: $first-heading !important
+  /* font-weight:             400 !important
+  display: block
+  margin: 0 !important
+  padding: .75em 0 1em 0.71rem !important
+  /*position:                 relative  !important
+   *z-index:                    99999 !important
+/* redirect title
+#contentSub
+  display: none !important
+.dablink, .rellink, .relarticle
+  font-size: 0.95em
+  color: $gray6
+  position: relative
+  z-index: 99
+#column-one, #footer, #mw-panel > *:not(#p-lang), .noprint, #panel, #head, #page-base
+  display: none !important
+/* hide left and top panel
+/* section headers
+h1, h2, h3, h4, h5, h6
+  border: none !important
+  /*font-family:              Open Sans, Droid Serif, PT Serif, Georgia, Helvetica, sans-serif !important
+  margin: 0.5em 0
+  color: white
+/*h2
+ *font-size:                    21px
+ *
+ *h3
+ *font-size:                    18px
+ *font-weight:                  400
+ *
+ *h4
+ *font-size:                    16px
+ *font-weight:                  400
+ *
+ *h5
+ *font-size:                    1em
+ *font-weight:                  400
+ *
+#content
+  &.mw-body
+    position: relative
+    top: 0
+    bottom: 0
+    margin: 0
+    border: none !important
+    border-radius: .14rem !important
+    box-sizing: border-box
+    padding: 0 1.6em 2em 1em !important
+    padding-left: 15rem !important
+    background: none
+    //     background: rgba(0, 0, 0, 0.742)
+    color: $inactive-paragraph
+  ul, ol
+    color: $inactive-list !important
+    list-style-image: none
+    margin-bottom: 1em
+    margin-top: 0em
+  ul
+    li
+      list-style: none
+      position: relative
+      &:before
+        content: '\2023'
+        position: absolute
+        left: -1em
+        font-family: $text-font
+  .hlist, .catlinks
+    li
+      &:before
+        content: '' !important
+
+  table.wikitable
+    color: $gray4 !important
+    border: 1px solid $gray9 !important
+table.wikitable >
+  tr >
+    th, td
+      border: 1px solid $gray8 !important
+  * > tr >
+    th, td
+      border: 1px solid $gray8 !important
+
+table.toptextcells
+  background: transparent !important
+  border: none !important
+  border-collapse: collapse !important
+  color: $inactive-list !important
+
+  > tbody
+    border: none !important
+    & > tr
+      //text-
+
+    & > tr
+      border: none !important
+
+      & > td
+        background: transparent !important
+        border: none !important
+        color: inherit !important
+        border-color: black !important
+        &:first-child
+          background: rgba(255, 255, 255, 0.04) !important
+          color: white
+          border: none !important
+      & > th
+        background: rgba(0, 0, 0, 1) !important
+        color: white
+        border: 2px solid white !important
+        border-width: .2em 0 !important
+        padding: .2em !important
+        letter-spacing: 0.25em
+        text-transform: uppercase
+        text-align: center
+        font-weight: bolder !important
+
+        & *
+          font-weight: bolder !important
+
+table.cmbox
+  background:           rgba(255, 247, 245, 0.125) !important
+  border:               6px double rgba(255, 255, 255, 0.125) !important
+//
+
+table.vertical-navbox, .BoxenVerschmelzen
+  background:           none !important
+  border-radius:        7px !important
+  border:               6px double rgba(255, 255, 255, 0.15)!important
+  padding:              0
+  border-spacing:       0
+  th
+    background:         rgba(252, 247, 255, 0.07)
+  div.NavFrame
+    div.NavHead
+      background-color: rgba(255, 255, 255, 0.04)!important
+    div.NavContent
+      padding-bottom:   1em
+
+
+
+/* language selection
+
+#p-lang
+  position: fixed
+  bottom: 0
+  left: 0
+  padding: 0 !important
+  margin: 0 !important
+  background: none !important
+  background: rgba(0,0,0,.2) !important
+  -webkit-backdrop-filter: blur(10px)
+  font-family: $text-font
+  text-align: center
+
+  h3
+    padding: 0 !important
+    margin: 0 !important
+    color:  $gray5
+
+  .body
+    max-height: 0 !important
+    overflow: hidden
+    overflow-y: auto
+    transition: 1s max-height
+    width: $sidebar-width
+    padding: 0 !important
+    margin: 0 !important
+    ul
+      padding: 0 !important
+      margin: 0 !important
+
+
+  &:hover
+    h3
+      color:  white
+    .body
+      max-height: 15rem !important
+
+  .uls-settings-trigger
+    display: none
+
+
+
+/* table of contents
+
+#toc
+  font-family: $toc-font !important
+  /*border:                   1px solid $gray9 !important
+  border: none
+  /*border-radius:            2px !important
+  font-size: .85rem
+  font-weight: 400
+  /*background:               url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/dark_mosaic.png)
+  background: transparent
+  /*    background:           url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/dark_leather.png)
+  /* make sidebar
+  position: fixed !important
+  display: inline-block
+  top: 0
+  bottom: 0
+  left: 0
+  width: $sidebar-width
+  padding: 0.2em 0
+  margin: 0 .5em
+  /*word-break:               break-all !important
+  overflow: auto
+  /*z-index:                  99999
+  /*    background:           rgba(0, 0, 0, .742)
+  /*height:                   100%
+  /*        background:       #232323 url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/dark_leather.png) center center scroll
+  > ul
+    overflow-y: auto !important
+    /*word-break:               break-all !important
+    /*height:                   100% !important
+    overflow-x: hidden !important
+    /*        background:       #232323 url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/dark_leather.png) center center scroll
+    padding: 1em 0 5em
+    margin: auto 0 !important
+@media (max-width: 50rem)
+  #content.mw-body
+    padding-left: 1rem !important
+  #toc, #p-lang
+    left: -$sidebar-width + 1rem
+    transition: .5s left, .5s opacity
+    padding: 0
+    margin: 0
+    &:hover
+      opacity: 1
+      left: 0
+  #toc
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.6)
+    /*          background:   rgba(0, 0, 0, .742)
+    -webkit-backdrop-filter: saturate(180%) blur(20px)
+    -moz-backdrop-filter: saturate(180%) blur(20px)
+    backdrop-filter: saturate(180%) blur(20px)
+    opacity: 0
+.toc
+  ul ul
+    margin-left: 1em !important
+  a
+    //display: block
+    padding: 0.25em 1em
+    border-radius: .14rem
+    line-height: 1.25 !important
+    display: table-row
+/* toc headers
+.toclevel-1 > a > .toctext
+  font-weight: 600
+  text-transform: uppercase
+  padding-top: 0.25em
+  //display: inline-block
+.tocnumber
+  // display: none
+  opacity: .5
+.toc h2
+  display: none !important
+/*.toc:                       hover
+ *background-color:             #F5F5F5 !important
+ *box-shadow:                   0 0 4px $gray7 !important
+ *-moz-transition:              400ms
+ *
+.toccolours, .thumb
+  border: 1px solid $gray9 !important
+  /*    box-shadow:           0px 0px 3px 0 #232323 !important
+  border-radius: .14rem !important
+div.toctitle
+  text-decoration: none !important
+span.toctoggle
+  display: none !important
+/* pictures / images
+
+
+.infobox
+  background-color: $gray2 !important
+  border: 1px solid $gray4 !important
+  border-radius: .14rem !important
+  color: rgb(200, 200, 200)
+  /*    box-shadow:           0px 0px 2px 0 #232323 !important;
+  tbody tr
+    th
+      background: none !important
+      font-weight: 600 !important
+      color: rgb(125, 125, 125)
+    td
+      background-color: transparent !important
+.thumb
+  border: 1px solid $gray3 !important
+  border-radius: .14rem !important
+  border-radius: .7rem !important
+  border: 1px solid rgba(255, 255, 255, 0.41) !important
+  overflow: hidden
+.thumbinner
+  /*padding:                  4px !important;
+  border: none !important
+  border-radius: .7rem !important
+  border: 6px double rgba(255, 255, 255, 0.15) !important
+  background-color: black !important
+.thumbimage
+  border: none !important
+.magnify
+  display: none
+.editsection, .mw-editsection, .plainlinks.hlist.navbar
+  display: none !important
+a
+  text-decoration:   none !important
+  transition:        .5s border-color, .5s border-width, .5s box-shadow, .5s color
+  border-bottom:     .2em solid
+  &:link
+    color:           inherit !important
+    border-color:    $link-link !important
+    &:hover
+      color:         black !important
+      border-color:  black !important
+      box-shadow:    inset 0 -1.3em 0 0 $link-hover
+  &:active
+    outline:         none
+    color:           inherit !important
+    border-color:    $link-active !important
+    &:hover
+      color:         black !important
+      border-color:  black !important
+      box-shadow:    inset 0 -1.3em 0 0 $link-active
+  &:visited
+    color:           inherit !important
+    border-color:    $link-visited !important
+    &:hover
+      color:         white !important
+      border-color:  white !important
+      box-shadow:    inset 0 -1.3em 0 0 $link-visited
+  &.new
+    color:           inherit !important
+    border-color:    $link-new !important
+    &:hover
+      color:         white !important
+      border-color:  white !important
+      box-shadow:    inset 0 -1.3em 0 0 $link-new
+
+
+table.wikitable
+  background-color: rgba(49, 49, 49, 0.06) !important
+  color: $gray7 !important
+  & > tr > th, & > * > tr > th
+    background-color: black
+    background: black !important
+    text-transform: uppercase
+    letter-spacing: .1em
+    padding: .5em
+    color: white
+  &>*>tr>th, &>*>tr>td
+    border: 1px solid rgba(255, 255, 255, 0.13) !important
+  &>*>tr
+    & td
+      background: rgba(255,255,255, .125) !important
+      & + td
+        border: 1px solid rgba(255, 255, 255, 0.13) !important
+        background: transparent !important
+.navbox, .navbox-subgroup, .taxobox
+  background: rgba(231, 231, 231, 0.12) !important
+  border: 1px solid $gray4 !important
+  .navbox-abovebelow, th.navbox-group, .navbox-title
+    background: rgba(0, 0, 0, 0.6)
+  th, .navbox-title
+    background: black !important
+
+  .navbox-even
+    background: rgba(243, 243, 243, 0.02)
+  .navbox-list
+    border-color: rgba(255, 255, 255, 0.21)
+
+.mbox-small
+  border: 5px double $gray3 !important
+  background-color: #000000 !important
+  border-radius: 1rem
+  box-shadow: 0 0 0px 1px rgba(255, 255, 255, 0.22)
+
+#mw-navigation
+  color: white !important
+
+
+#toc a
+  border: none !important
+  box-shadow: none !important
+  &:link
+    color: $gray6 !important
+    text-decoration: none !important
+  &:visited
+    color: $gray7 !important
+  &:hover
+    color: white !important
+    text-decoration: none !important
+    background: rgba(255, 255, 255, 0.05)
+  &:active
+    color: $toc-link-active !important
+    outline: none
+/* search results
+.mw-search-result-data, .mw-specialpage-summary, .mw-search-formheader, .mw-search-createlink
+  display: none !important
+.mw-search-results
+  padding-top: 1rem !important
+div.mw-jump, table#mw-search-top-table tr td input, a[href="#References"], sup[class="reference"], span[id="References"], .refbegin, div#mw-articlefeedback, #coordinates, div#protected-icon
+  display: none !important
+  // not: ol[class="references"],
+
+/* hide citations
+/* hide rating
+/* hide coordinates on location pages
+/* hide hide button
+ *.collapseButton
+ *display:                      none !important;
+ *}
+/* hide protected lock
+/* merge suggestion
+ *table.metadata.plainlinks.ambox.ambox-move {
+ *display:                      none !important
+ *}
+/* needs citations
+table.ambox
+  font-size: 0.9em
+  margin: 1em 2em
+  background: rgba(255, 255, 255, 0.05)
+  border: none
+  border-radius: .14rem
+  padding: .25em .5em
+  color: rgba(255, 255, 255, 0.65)
+/* hide stubs
+TABLE.metadata.plainlinks.stub
+  display: none !important
+/* V•T•E
+.plainlinks.hlist.navbar.mini
+  display: none
+/* Categories
+#mw-normal-catlinks
+  font-size: 0.9em
+.catlinks
+  border: 6px double rgba(255, 255, 255, 0.08) !important
+  background-color: rgba(0, 0, 0, 1) !important
+  border-radius: 1rem
+  font-weight: bold
+  text-align: center !important
+.hatnote
+  text-align: center
+
+p, .thumbinner, .hatnote, li, dt, dd, tr, .hauptartikel, tbody
+  &:hover
+    &, li, td, th
+      color: white !important
+
+    a
+      &:link
+        color:           inherit
+        border-color:    $active-link-link !important
+        &:hover
+          color:         $active-link-hover !important
+          color:         black !important
+          box-shadow:    inset 0 -1.3em 0 0 $active-link-hover
+          border-color:  black !important
+      &:active
+        color:           inherit
+        border-color:    $active-link-active !important
+        &:hover
+          color:         $active-link-active !important
+          color:         white !important
+          box-shadow:    inset 0 -1.3em 0 0 $active-link-visited
+          border-color:  white !important
+      &:visited
+        color:           inherit
+        border-color:    $active-link-visited !important
+        &:hover
+          color:         $active-link-visited !important
+          color:         white !important
+          box-shadow:    inset 0 -1.3em 0 0 $active-link-visited
+          border-color:  white !important
+      &.new
+        color:           inherit
+        border-color:    $active-link-new
+        &:hover
+          color:         black !important
+          box-shadow:    inset 0 -1.3em 0 0 $active-link-new
+          border-color:  black !important
+
+
+// templates
+.hintergrundfarbe1
+  background: rgba(11, 11, 11, .42) !important
+.hintergrundfarbe2
+  background: rgba(22, 22, 22, .42) !important
+.hintergrundfarbe3
+  background: rgba(33, 33, 33, .42) !important
+.hintergrundfarbe4
+  background: rgba(44, 44, 44, .42) !important
+.hintergrundfarbe5
+  background: rgba(55, 55, 55, .42) !important
+
+
+
+
+.mwe-math-fallback-image-display,
+.mwe-math-fallback-image-inline,
+.mwe-math-fallback-source-inline,
+.mwe-math-fallback-source-display
+  -webkit-filter: invert(1)
+
+
+// ------------------------------------------------------------------------
+// SEARCH
+// ------------------------------------------------------------------------
+
+#p-search
+  position: fixed
+  top: 0rem
+  left: 50%
+  margin-left: -11rem
+  transition: .5s top, .5s opacity
+  opacity: 1
+  top: -4rem
+  padding-bottom: 2rem
+  z-index: 100
+
+#p-search:hover,
+#p-search:focus
+  top: 0
+  opacity: 1
+
+#p-search:hover #searchform
+
+  box-shadow: 0 0 3rem rgba(255, 255, 255, 0.15)
+  -webkit-backdrop-filter: blur(15px)
+
+#p-search #searchform
+  width: 20rem
+  background-color: rgba(0, 0, 0, 0.4)
+  padding: 0 1rem 2.5rem
+  border-radius: 0 0 1rem 1rem
+  margin: 0 !important
+  transition: .5s box-shadow, .5s -webkit-backdrop-filter
+
+#simpleSearch
+  background: none !important
+  border: none !important
+  width: 20rem !important
+  margin: 0 !important
+
+#p-search #searchInput
+  margin: 0 !important
+  -webkit-appearance: none
+  font-size: 2em !important
+  color: white
+  border-bottom: 1px solid white
+  font-family: Baskerville
+  font-weight: 599
+  border-radius: 0 !important
+
+.suggestions
+  position: fixed !important
+  margin: 1.65rem 0rem 0 -1rem !important
+
+
+#searchButton
+  display: none
+
+
+::selection
+  background: red !important
+  color: white !important
+
+
+@import 'mw-highlight'
